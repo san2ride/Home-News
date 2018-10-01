@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADD97C0C2160B49100159C0F /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD97C0B2160B49100159C0F /* FilterController.swift */; };
+		ADD97C0E2160B4E400159C0F /* SummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD97C0D2160B4E400159C0F /* SummaryController.swift */; };
+		ADD97C102160B53100159C0F /* SaleHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD97C0F2160B53100159C0F /* SaleHistoryController.swift */; };
+		ADD97C1E2160BA9000159C0F /* house-for-sale-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C142160BA9000159C0F /* house-for-sale-1024.png */; };
+		ADD97C1F2160BA9000159C0F /* house-for-sale-120.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C152160BA9000159C0F /* house-for-sale-120.png */; };
+		ADD97C202160BA9000159C0F /* house-for-sale-1280.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C162160BA9000159C0F /* house-for-sale-1280.png */; };
+		ADD97C212160BA9000159C0F /* house-for-sale-180.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C172160BA9000159C0F /* house-for-sale-180.png */; };
+		ADD97C222160BA9000159C0F /* house-for-sale-40.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C182160BA9000159C0F /* house-for-sale-40.png */; };
+		ADD97C232160BA9000159C0F /* house-for-sale-58.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C192160BA9000159C0F /* house-for-sale-58.png */; };
+		ADD97C242160BA9000159C0F /* house-for-sale-60.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C1A2160BA9000159C0F /* house-for-sale-60.png */; };
+		ADD97C252160BA9000159C0F /* house-for-sale-80.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C1B2160BA9000159C0F /* house-for-sale-80.png */; };
+		ADD97C262160BA9000159C0F /* house-for-sale-87.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C1C2160BA9000159C0F /* house-for-sale-87.png */; };
+		ADD97C272160BA9000159C0F /* house-for-sale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C1D2160BA9000159C0F /* house-for-sale.jpg */; };
+		ADD97C2B2160BD7600159C0F /* HomeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD97C2A2160BD7600159C0F /* HomeListController.swift */; };
+		ADED1F74215F6B2B002B34AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED1F73215F6B2B002B34AD /* AppDelegate.swift */; };
+		ADED1F7B215F6B2B002B34AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADED1F79215F6B2B002B34AD /* Main.storyboard */; };
+		ADED1F7D215F6B2E002B34AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADED1F7C215F6B2E002B34AD /* Assets.xcassets */; };
+		ADED1F80215F6B2F002B34AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADED1F7E215F6B2F002B34AD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ADD97C0B2160B49100159C0F /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
+		ADD97C0D2160B4E400159C0F /* SummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryController.swift; sourceTree = "<group>"; };
+		ADD97C0F2160B53100159C0F /* SaleHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleHistoryController.swift; sourceTree = "<group>"; };
+		ADD97C142160BA9000159C0F /* house-for-sale-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-for-sale-1024.png"; sourceTree = "<group>"; };
+		ADD97C152160BA9000159C0F /* house-for-sale-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-for-sale-120.png"; sourceTree = "<group>"; };
+		ADD97C162160BA9000159C0F /* house-for-sale-1280.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-for-sale-1280.png"; sourceTree = "<group>"; };
+		ADD97C172160BA9000159C0F /* house-for-sale-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-for-sale-180.png"; sourceTree = "<group>"; };
+		ADD97C182160BA9000159C0F /* house-for-sale-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-for-sale-40.png"; sourceTree = "<group>"; };
+		ADD97C192160BA9000159C0F /* house-for-sale-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-for-sale-58.png"; sourceTree = "<group>"; };
+		ADD97C1A2160BA9000159C0F /* house-for-sale-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-for-sale-60.png"; sourceTree = "<group>"; };
+		ADD97C1B2160BA9000159C0F /* house-for-sale-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-for-sale-80.png"; sourceTree = "<group>"; };
+		ADD97C1C2160BA9000159C0F /* house-for-sale-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-for-sale-87.png"; sourceTree = "<group>"; };
+		ADD97C1D2160BA9000159C0F /* house-for-sale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "house-for-sale.jpg"; sourceTree = "<group>"; };
+		ADD97C2A2160BD7600159C0F /* HomeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListController.swift; sourceTree = "<group>"; };
+		ADED1F70215F6B2B002B34AD /* Home News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADED1F73215F6B2B002B34AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADED1F7A215F6B2B002B34AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADED1F7C215F6B2E002B34AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADED1F7F215F6B2F002B34AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADED1F81215F6B2F002B34AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADED1F6D215F6B2B002B34AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADD97C062160B2DD00159C0F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADD97C2A2160BD7600159C0F /* HomeListController.swift */,
+				ADD97C0B2160B49100159C0F /* FilterController.swift */,
+				ADD97C0F2160B53100159C0F /* SaleHistoryController.swift */,
+				ADD97C0D2160B4E400159C0F /* SummaryController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		ADD97C072160B2E900159C0F /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		ADD97C082160B2F700159C0F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ADD97C112160B54C00159C0F /* extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		ADD97C122160B5DD00159C0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADED1F7C215F6B2E002B34AD /* Assets.xcassets */,
+				ADED1F7E215F6B2F002B34AD /* LaunchScreen.storyboard */,
+				ADED1F81215F6B2F002B34AD /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADD97C132160BA9000159C0F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ADD97C142160BA9000159C0F /* house-for-sale-1024.png */,
+				ADD97C152160BA9000159C0F /* house-for-sale-120.png */,
+				ADD97C162160BA9000159C0F /* house-for-sale-1280.png */,
+				ADD97C172160BA9000159C0F /* house-for-sale-180.png */,
+				ADD97C182160BA9000159C0F /* house-for-sale-40.png */,
+				ADD97C192160BA9000159C0F /* house-for-sale-58.png */,
+				ADD97C1A2160BA9000159C0F /* house-for-sale-60.png */,
+				ADD97C1B2160BA9000159C0F /* house-for-sale-80.png */,
+				ADD97C1C2160BA9000159C0F /* house-for-sale-87.png */,
+				ADD97C1D2160BA9000159C0F /* house-for-sale.jpg */,
+			);
+			name = images;
+			path = ../../images;
+			sourceTree = "<group>";
+		};
+		ADED1F67215F6B2B002B34AD = {
+			isa = PBXGroup;
+			children = (
+				ADED1F72215F6B2B002B34AD /* Home News */,
+				ADED1F71215F6B2B002B34AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADED1F71215F6B2B002B34AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADED1F70215F6B2B002B34AD /* Home News.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADED1F72215F6B2B002B34AD /* Home News */ = {
+			isa = PBXGroup;
+			children = (
+				ADD97C112160B54C00159C0F /* extension */,
+				ADED1F73215F6B2B002B34AD /* AppDelegate.swift */,
+				ADED1F79215F6B2B002B34AD /* Main.storyboard */,
+				ADD97C082160B2F700159C0F /* model */,
+				ADD97C072160B2E900159C0F /* view */,
+				ADD97C062160B2DD00159C0F /* controller */,
+				ADD97C132160BA9000159C0F /* images */,
+				ADD97C122160B5DD00159C0F /* Supporting Files */,
+			);
+			path = "Home News";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADED1F6F215F6B2B002B34AD /* Home News */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADED1F84215F6B2F002B34AD /* Build configuration list for PBXNativeTarget "Home News" */;
+			buildPhases = (
+				ADED1F6C215F6B2B002B34AD /* Sources */,
+				ADED1F6D215F6B2B002B34AD /* Frameworks */,
+				ADED1F6E215F6B2B002B34AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Home News";
+			productName = "Home News";
+			productReference = ADED1F70215F6B2B002B34AD /* Home News.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADED1F68215F6B2B002B34AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Jason Sanchez";
+				TargetAttributes = {
+					ADED1F6F215F6B2B002B34AD = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = ADED1F6B215F6B2B002B34AD /* Build configuration list for PBXProject "Home News" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADED1F67215F6B2B002B34AD;
+			productRefGroup = ADED1F71215F6B2B002B34AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADED1F6F215F6B2B002B34AD /* Home News */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADED1F6E215F6B2B002B34AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD97C1F2160BA9000159C0F /* house-for-sale-120.png in Resources */,
+				ADD97C212160BA9000159C0F /* house-for-sale-180.png in Resources */,
+				ADD97C272160BA9000159C0F /* house-for-sale.jpg in Resources */,
+				ADD97C262160BA9000159C0F /* house-for-sale-87.png in Resources */,
+				ADD97C1E2160BA9000159C0F /* house-for-sale-1024.png in Resources */,
+				ADD97C222160BA9000159C0F /* house-for-sale-40.png in Resources */,
+				ADD97C202160BA9000159C0F /* house-for-sale-1280.png in Resources */,
+				ADD97C232160BA9000159C0F /* house-for-sale-58.png in Resources */,
+				ADED1F80215F6B2F002B34AD /* LaunchScreen.storyboard in Resources */,
+				ADD97C252160BA9000159C0F /* house-for-sale-80.png in Resources */,
+				ADD97C242160BA9000159C0F /* house-for-sale-60.png in Resources */,
+				ADED1F7D215F6B2E002B34AD /* Assets.xcassets in Resources */,
+				ADED1F7B215F6B2B002B34AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADED1F6C215F6B2B002B34AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD97C102160B53100159C0F /* SaleHistoryController.swift in Sources */,
+				ADD97C2B2160BD7600159C0F /* HomeListController.swift in Sources */,
+				ADD97C0E2160B4E400159C0F /* SummaryController.swift in Sources */,
+				ADD97C0C2160B49100159C0F /* FilterController.swift in Sources */,
+				ADED1F74215F6B2B002B34AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ADED1F79215F6B2B002B34AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADED1F7A215F6B2B002B34AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADED1F7E215F6B2F002B34AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADED1F7F215F6B2F002B34AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADED1F82215F6B2F002B34AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADED1F83215F6B2F002B34AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADED1F85215F6B2F002B34AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				INFOPLIST_FILE = "$(SRCROOT)/Home News/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trvl.Home-News";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADED1F86215F6B2F002B34AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				INFOPLIST_FILE = "$(SRCROOT)/Home News/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trvl.Home-News";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADED1F6B215F6B2B002B34AD /* Build configuration list for PBXProject "Home News" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADED1F82215F6B2F002B34AD /* Debug */,
+				ADED1F83215F6B2F002B34AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADED1F84215F6B2F002B34AD /* Build configuration list for PBXNativeTarget "Home News" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADED1F85215F6B2F002B34AD /* Debug */,
+				ADED1F86215F6B2F002B34AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADED1F68215F6B2B002B34AD /* Project object */;
+}
