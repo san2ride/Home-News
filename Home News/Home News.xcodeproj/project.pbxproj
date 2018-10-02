@@ -24,6 +24,9 @@
 		ADD97C262160BA9000159C0F /* house-for-sale-87.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C1C2160BA9000159C0F /* house-for-sale-87.png */; };
 		ADD97C272160BA9000159C0F /* house-for-sale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADD97C1D2160BA9000159C0F /* house-for-sale.jpg */; };
 		ADD97C2B2160BD7600159C0F /* HomeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD97C2A2160BD7600159C0F /* HomeListController.swift */; };
+		ADE80D17216315C50066DD37 /* SaleHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE80D16216315C50066DD37 /* SaleHistoryCell.swift */; };
+		ADE80D19216316BA0066DD37 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE80D18216316BA0066DD37 /* Date+Ext.swift */; };
+		ADE80D1B216318680066DD37 /* HomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE80D1A216318680066DD37 /* HomeType.swift */; };
 		ADED1F74215F6B2B002B34AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED1F73215F6B2B002B34AD /* AppDelegate.swift */; };
 		ADED1F7B215F6B2B002B34AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADED1F79215F6B2B002B34AD /* Main.storyboard */; };
 		ADED1F7D215F6B2E002B34AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADED1F7C215F6B2E002B34AD /* Assets.xcassets */; };
@@ -58,6 +61,9 @@
 		ADD97C1C2160BA9000159C0F /* house-for-sale-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-for-sale-87.png"; sourceTree = "<group>"; };
 		ADD97C1D2160BA9000159C0F /* house-for-sale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "house-for-sale.jpg"; sourceTree = "<group>"; };
 		ADD97C2A2160BD7600159C0F /* HomeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListController.swift; sourceTree = "<group>"; };
+		ADE80D16216315C50066DD37 /* SaleHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleHistoryCell.swift; sourceTree = "<group>"; };
+		ADE80D18216316BA0066DD37 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		ADE80D1A216318680066DD37 /* HomeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeType.swift; sourceTree = "<group>"; };
 		ADED1F70215F6B2B002B34AD /* Home News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADED1F73215F6B2B002B34AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADED1F7A215F6B2B002B34AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				ADD97C2A2160BD7600159C0F /* HomeListController.swift */,
-				ADD97C0B2160B49100159C0F /* FilterController.swift */,
 				ADD97C0F2160B53100159C0F /* SaleHistoryController.swift */,
+				ADD97C0B2160B49100159C0F /* FilterController.swift */,
 				ADD97C0D2160B4E400159C0F /* SummaryController.swift */,
 			);
 			path = controller;
@@ -102,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				ADEF6ED82162E978005A6BCC /* HomeListCell.swift */,
+				ADE80D16216315C50066DD37 /* SaleHistoryCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -120,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				ADEF6EDA2162EF46005A6BCC /* Double+Ext.swift */,
+				ADE80D18216316BA0066DD37 /* Date+Ext.swift */,
+				ADE80D1A216318680066DD37 /* HomeType.swift */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -286,11 +295,14 @@
 				ADEF6ED92162E978005A6BCC /* HomeListCell.swift in Sources */,
 				AD1504982162CC820066C20F /* Home_News.xcdatamodeld in Sources */,
 				ADEF6ED52162E410005A6BCC /* Home+CoreDataProperties.swift in Sources */,
+				ADE80D17216315C50066DD37 /* SaleHistoryCell.swift in Sources */,
 				ADD97C2B2160BD7600159C0F /* HomeListController.swift in Sources */,
 				ADEF6EDB2162EF46005A6BCC /* Double+Ext.swift in Sources */,
 				ADEF6ED72162E410005A6BCC /* Condo+CoreDataProperties.swift in Sources */,
+				ADE80D19216316BA0066DD37 /* Date+Ext.swift in Sources */,
 				ADEF6ED62162E410005A6BCC /* Condo+CoreDataClass.swift in Sources */,
 				ADEF6ED42162E410005A6BCC /* Home+CoreDataClass.swift in Sources */,
+				ADE80D1B216318680066DD37 /* HomeType.swift in Sources */,
 				ADD97C0E2160B4E400159C0F /* SummaryController.swift in Sources */,
 				AD1504952162CB6F0066C20F /* CoreDataStack.swift in Sources */,
 				ADEF6ED12162E410005A6BCC /* SaleHistory+CoreDataProperties.swift in Sources */,
