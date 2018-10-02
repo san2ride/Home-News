@@ -319,6 +319,13 @@
                             <outlet property="delegate" destination="A6Z-YI-pnc" id="mqX-rM-qqB"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="filterByCondoCell" destination="C8u-26-ai5" id="Ium-7A-ioU"/>
+                        <outlet property="filterBySingleFamilyCell" destination="kHF-rC-nyt" id="Zpa-te-dzc"/>
+                        <outlet property="sortByLocationCell" destination="sg0-BN-rgU" id="4cE-4B-maS"/>
+                        <outlet property="sortByPriceHighLowCell" destination="3kj-QY-8pw" id="YHs-Ii-quF"/>
+                        <outlet property="sortByPriceLowHighCell" destination="qTQ-7B-i1V" id="1fh-7n-nf4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWQ-pC-XQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -612,6 +619,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Sold Homes" id="srt-RB-fjA"/>
+                    <connections>
+                        <outlet property="avgPriceCondoLabel" destination="4WX-n6-ajJ" id="wtM-Sj-7m6"/>
+                        <outlet property="avgPriceSFLabel" destination="qwF-85-p7n" id="qLB-2E-79h"/>
+                        <outlet property="maxPriceHomeLabel" destination="rQM-eO-Srz" id="mun-vf-Pmw"/>
+                        <outlet property="minPriceHomeLabel" destination="JaV-cg-U8H" id="EUO-Io-KNv"/>
+                        <outlet property="numCondoSoldLabel" destination="FG1-JA-crY" id="jnm-cP-cij"/>
+                        <outlet property="numSFSoldLabel" destination="Fed-81-Nl2" id="rfl-gl-3Gp"/>
+                        <outlet property="totalSalesDollarLabel" destination="8jT-h5-dxm" id="Bkw-5n-v6D"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bh-Z2-Dzn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -626,6 +642,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="TY5-nM-dl8">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
