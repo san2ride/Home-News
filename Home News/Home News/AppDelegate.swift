@@ -24,9 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarController = self.window?.rootViewController as! UITabBarController
         
         // First Tab - Home List
-        
+        let homeListNavController = tabBarController.viewControllers?[0] as! UINavigationController
+        let homeListController = homeListNavController.topViewController as! HomeListController
+        homeListController.managedObjectContext = managedObjectContext
         
         // Second Tab - Summary View
+        let summaryNavController = tabBarController.viewControllers?[1] as! UINavigationController
+        let summaryController = summaryNavController.topViewController as! SummaryController
+        summaryController.managedObjectContext = managedObjectContext
+        
         return true
     }
 

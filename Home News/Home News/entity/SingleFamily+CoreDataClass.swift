@@ -11,6 +11,6 @@ import Foundation
 import CoreData
 
 
-public class SingleFamily: Home {
+public class SingleFamily: NSManagedObject {
 
 }

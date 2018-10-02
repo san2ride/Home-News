@@ -7,17 +7,27 @@
 //
 
 import UIKit
+import CoreData
 
 class SummaryController: UITableViewController {
-
+    
+    // MARK: Outlets
+    
+    // MARK: Properties
+    private var home: Home?
+    
+    weak var managedObjectContext: NSManagedObjectContext! {
+        didSet {
+            return home = Home(context: managedObjectContext)
+        }
+    }
+    
+    private var soldPredicate: NSPredicate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
     // MARK: - Table view data source

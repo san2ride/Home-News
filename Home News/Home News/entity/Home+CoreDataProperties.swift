@@ -25,6 +25,23 @@ extension Home {
     @NSManaged public var isForSale: Bool
     @NSManaged public var price: Double
     @NSManaged public var sqft: Int16
-    @NSManaged public var saleHistory: SaleHistory?
+    @NSManaged public var saleHistory: NSSet?
+
+}
+
+// MARK: Generated accessors for saleHistory
+extension Home {
+
+    @objc(addSaleHistoryObject:)
+    @NSManaged public func addToSaleHistory(_ value: SaleHistory)
+
+    @objc(removeSaleHistoryObject:)
+    @NSManaged public func removeFromSaleHistory(_ value: SaleHistory)
+
+    @objc(addSaleHistory:)
+    @NSManaged public func addToSaleHistory(_ values: NSSet)
+
+    @objc(removeSaleHistory:)
+    @NSManaged public func removeFromSaleHistory(_ values: NSSet)
 
 }

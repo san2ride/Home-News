@@ -24,12 +24,15 @@
                                     <segment title="Sold"/>
                                 </segments>
                                 <color key="tintColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentedAction:" destination="fz4-6x-vNz" eventType="valueChanged" id="nIa-CL-LjQ"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QiH-Ne-CQm">
                                 <rect key="frame" x="0.0" y="184" width="375" height="434"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homeCell" rowHeight="65" id="sGk-iQ-Agt">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homeCell" rowHeight="65" id="sGk-iQ-Agt" customClass="HomeListCell" customModule="Home_News" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sGk-iQ-Agt" id="qJx-NN-AF5">
@@ -161,10 +164,21 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="bathLabel" destination="dcu-Vt-zGT" id="nS3-KX-gzQ"/>
+                                            <outlet property="bedLabel" destination="a0k-F9-b3U" id="gRw-vL-5eh"/>
+                                            <outlet property="catergoryLabel" destination="BU3-nJ-fXh" id="d0P-ZS-Yvw"/>
+                                            <outlet property="cityLabel" destination="ttx-4k-pZf" id="lYc-5v-LhL"/>
+                                            <outlet property="homeImageView" destination="Sne-Om-Up5" id="avN-Ck-OSM"/>
+                                            <outlet property="priceLabel" destination="hPh-3j-4e2" id="eZe-RG-4Jl"/>
+                                            <outlet property="sqftLabel" destination="qOa-nB-yym" id="3nE-lc-lj4"/>
                                             <segue destination="Jrs-dj-669" kind="show" identifier="segueHistory" id="fn4-ZH-XWJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fz4-6x-vNz" id="Jh3-RW-Raq"/>
+                                    <outlet property="delegate" destination="fz4-6x-vNz" id="BcK-t3-RPO"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -187,6 +201,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="R5V-n6-1ld" id="eQd-au-h6s"/>
+                        <outlet property="tableView" destination="QiH-Ne-CQm" id="b3d-wS-h1k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L4f-C6-hdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

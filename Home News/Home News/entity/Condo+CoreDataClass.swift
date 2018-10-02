@@ -11,6 +11,6 @@ import Foundation
 import CoreData
 
 
-public class Condo: Home {
+public class Condo: NSManagedObject {
 
 }
