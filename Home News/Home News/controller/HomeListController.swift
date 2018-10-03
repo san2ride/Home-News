@@ -23,9 +23,9 @@ class HomeListController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     private lazy var homes = [Home]()
-    private var selectedHome: Home?
     private var home: Home? = nil
     private var isForSale: Bool = true
+    private var selectedHome: Home?
     
     
     override func viewDidLoad() {
@@ -36,12 +36,15 @@ class HomeListController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        loadData()
     }
     
     // MARK: Segmented Control
     @IBAction func segmentedAction(_ sender: UISegmentedControl) {
         let selectedValue = sender.titleForSegment(at: sender.selectedSegmentIndex)
         isForSale = selectedValue == "For Sale" ? true : false
+        loadData()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -74,6 +77,15 @@ class HomeListController: UIViewController, UITableViewDataSource, UITableViewDe
             
         default:
             break
+        }
+    }
+    
+    // MARK: Private
+    
+    private func loadData() {
+        if let arrHomes = home?.getHomeByStatus(isForSale: isForSale, moc: managedObjectContext) {
+            homes = arrHomes
+            tableView.reloadData()
         }
     }
 }
