@@ -71,7 +71,13 @@ class HomeListController: UIViewController, UITableViewDataSource, UITableViewDe
         
         switch identifier {
         case "segueHistory":
-            break
+            let destination = segue.destination as! SaleHistoryController
+            
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                let selectedHome = homes[selectedIndexPath.row]
+                destination.home = selectedHome
+                destination.managedObjectContext = managedObjectContext
+            }
         case "segueToFilter":
             break
             

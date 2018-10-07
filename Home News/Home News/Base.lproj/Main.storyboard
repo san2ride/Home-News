@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -332,25 +331,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Fx-c9-Arh">
-                                <rect key="frame" x="20" y="319" width="335" height="300"/>
+                                <rect key="frame" x="20" y="367" width="335" height="252"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="10" reuseIdentifier="historyCell" textLabel="ReG-ZF-z4y" detailTextLabel="M3x-BF-Tdy" style="IBUITableViewCellStyleValue1" id="4mr-na-zss" customClass="SaleHistoryCell" customModule="Home_News" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="10" reuseIdentifier="historyCell" textLabel="ReG-ZF-z4y" detailTextLabel="M3x-BF-Tdy" rowHeight="58" style="IBUITableViewCellStyleValue1" id="4mr-na-zss" customClass="SaleHistoryCell" customModule="Home_News" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4mr-na-zss" id="p5x-II-LsQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="soldDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ReG-ZF-z4y">
-                                                    <rect key="frame" x="25" y="12" width="68.5" height="20.5"/>
+                                                    <rect key="frame" x="25" y="19" width="68.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="soldPrice" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M3x-BF-Tdy">
-                                                    <rect key="frame" x="249" y="12" width="71" height="20.5"/>
+                                                    <rect key="frame" x="249" y="19" width="71" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -377,12 +376,12 @@
                         <constraints>
                             <constraint firstItem="Pkt-P7-h1D" firstAttribute="leading" secondItem="L3d-3G-zec" secondAttribute="leading" constant="30" id="0Xv-fW-Md1"/>
                             <constraint firstItem="Pkt-P7-h1D" firstAttribute="centerX" secondItem="0Fx-c9-Arh" secondAttribute="centerX" id="3PL-o5-kM9"/>
+                            <constraint firstItem="0Fx-c9-Arh" firstAttribute="top" secondItem="Pkt-P7-h1D" secondAttribute="bottom" constant="8" symbolic="YES" id="QCd-Vw-d5m"/>
                             <constraint firstItem="Pkt-P7-h1D" firstAttribute="top" secondItem="L3d-3G-zec" secondAttribute="top" constant="20" id="QwE-Sc-qr9"/>
                             <constraint firstAttribute="bottomMargin" secondItem="0Fx-c9-Arh" secondAttribute="bottom" constant="-1" id="b3h-U3-9v7"/>
                             <constraint firstItem="0Fx-c9-Arh" firstAttribute="leading" secondItem="L3d-3G-zec" secondAttribute="leading" constant="20" id="kcc-AA-Ii6"/>
                             <constraint firstItem="Pkt-P7-h1D" firstAttribute="centerX" secondItem="97Z-Xv-I6d" secondAttribute="centerX" id="m3g-QV-ReA"/>
                             <constraint firstItem="L3d-3G-zec" firstAttribute="bottom" secondItem="Pkt-P7-h1D" secondAttribute="bottom" constant="259" id="sk4-oN-oQM"/>
-                            <constraint firstItem="0Fx-c9-Arh" firstAttribute="top" secondItem="L3d-3G-zec" secondAttribute="top" constant="203" id="zkW-NO-ema"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L3d-3G-zec"/>
                     </view>
@@ -394,7 +393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMS-P2-8Mf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2977" y="-1102"/>
+            <point key="canvasLocation" x="2976.8000000000002" y="-1102.3988005997003"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

@@ -54,6 +54,7 @@
 		ADEE3BD22169F3C900B23BDF /* 975000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADEE3BBC2169F3C900B23BDF /* 975000.jpg */; };
 		ADEF6ED92162E978005A6BCC /* HomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6ED82162E978005A6BCC /* HomeListCell.swift */; };
 		ADEF6EDB2162EF46005A6BCC /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6EDA2162EF46005A6BCC /* Double+Ext.swift */; };
+		ADF8F21F2169FEE2002C3A02 /* SaleHistory+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF8F21E2169FEE2002C3A02 /* SaleHistory+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,7 @@
 		ADEE3BBC2169F3C900B23BDF /* 975000.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 975000.jpg; sourceTree = "<group>"; };
 		ADEF6ED82162E978005A6BCC /* HomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCell.swift; sourceTree = "<group>"; };
 		ADEF6EDA2162EF46005A6BCC /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		ADF8F21E2169FEE2002C3A02 /* SaleHistory+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SaleHistory+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				ADE4236B2164BC770059D14C /* Home+Ext.swift */,
+				ADF8F21E2169FEE2002C3A02 /* SaleHistory+Ext.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				ADD97C2B2160BD7600159C0F /* HomeListController.swift in Sources */,
 				ADEF6EDB2162EF46005A6BCC /* Double+Ext.swift in Sources */,
 				ADE80D19216316BA0066DD37 /* Date+Ext.swift in Sources */,
+				ADF8F21F2169FEE2002C3A02 /* SaleHistory+Ext.swift in Sources */,
 				ADE80D1B216318680066DD37 /* HomeType.swift in Sources */,
 				ADD97C0E2160B4E400159C0F /* SummaryController.swift in Sources */,
 				AD639A202164A8C700DD67F5 /* SaleHistory+CoreDataClass.swift in Sources */,

@@ -14,7 +14,13 @@ class SaleHistoryController: UIViewController, UITableViewDelegate, UITableViewD
     // MARK: Property
     private lazy var soldHistory = [SaleHistory]()
     var home: Home?
-    weak var managedObjectContext: NSManagedObjectContext!
+    weak var managedObjectContext: NSManagedObjectContext! {
+        didSet {
+            saleHistory = SaleHistory(context: managedObjectContext)
+        }
+    }
+    
+    private var saleHistory: SaleHistory?
     
     // MARK: Outlets
     @IBOutlet weak var imageView: UIImageView!
@@ -24,7 +30,14 @@ class SaleHistoryController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loadSoldHistory()
         
+        if let homeImage = home?.image as Data? {
+            let image = UIImage(data: homeImage)
+            imageView.image = image
+            imageView.layer.borderWidth = 1
+            imageView.layer.cornerRadius = 4
+        }
     }
     // MARK: tableView dataSource
     
@@ -43,5 +56,13 @@ class SaleHistoryController: UIViewController, UITableViewDelegate, UITableViewD
         cell.configureCell(saleHistory: saleHistory)
         
         return cell
+    }
+    
+    // MARK: Private
+    private func loadSoldHistory() {
+        guard let home = home, let saleHistory = saleHistory else { return }
+        
+        soldHistory = saleHistory.soldHistoryData(for: home, moc: managedObjectContext)
+        tableView.reloadData()
     }
 }
