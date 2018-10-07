@@ -25,12 +25,13 @@ class HomeListController: UIViewController, UITableViewDataSource, UITableViewDe
     private lazy var homes = [Home]()
     private var home: Home? = nil
     private var isForSale: Bool = true
+    private var sortDescriptor = [NSSortDescriptor]()
+    private var searchPredicate: NSPredicate?
     private var selectedHome: Home?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
     }
     
@@ -79,7 +80,11 @@ class HomeListController: UIViewController, UITableViewDataSource, UITableViewDe
                 destination.managedObjectContext = managedObjectContext
             }
         case "segueToFilter":
-            break
+            sortDescriptor = []
+            searchPredicate = nil
+            
+            let destination = segue.destination as! FilterController
+            destination.delegate = self
             
         default:
             break
@@ -89,9 +94,21 @@ class HomeListController: UIViewController, UITableViewDataSource, UITableViewDe
     // MARK: Private
     
     private func loadData() {
-        if let arrHomes = home?.getHomeByStatus(isForSale: isForSale, moc: managedObjectContext) {
+        if let arrHomes = home?.getHomeByStatus(isForSale: isForSale, filterBy: searchPredicate, sortBy: sortDescriptor, moc: managedObjectContext) {
             homes = arrHomes
             tableView.reloadData()
+        }
+    }
+}
+
+extension HomeListController: FilterTableViewControllerDelegate {
+    func updateHomeList(filterby: NSPredicate?, sortby: NSSortDescriptor?) {
+        if let filter = filterby {
+            searchPredicate = filter
+        }
+        
+        if let sort = sortby {
+            sortDescriptor.append(sort)
         }
     }
 }

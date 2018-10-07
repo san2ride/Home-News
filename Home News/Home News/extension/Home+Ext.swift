@@ -10,9 +10,20 @@ import Foundation
 import CoreData
 
 extension Home {
-    func getHomeByStatus(isForSale: Bool, moc: NSManagedObjectContext) -> [Home] {
+    func getHomeByStatus(isForSale: Bool, filterBy filter: NSPredicate?, sortBy sort: [NSSortDescriptor], moc: NSManagedObjectContext) -> [Home] {
         let request: NSFetchRequest<Home> = Home.fetchRequest()
-        request.predicate = NSPredicate(format: "isForSale = %@", NSNumber(value: isForSale))
+        var predicates = [NSPredicate]()
+        
+        let statusPredicate = NSPredicate(format: "isForSale = %@", NSNumber(value: isForSale))
+        predicates.append(statusPredicate)
+        
+        if let additionalPredicate = filter {
+            predicates.append(additionalPredicate)
+        }
+        
+        let predicate = NSCompoundPredicate(type: .and, subpredicates: predicates)
+        request.predicate = predicate
+        request.sortDescriptors = sort.isEmpty ? nil : sort
         
         do {
             let homes = try moc.fetch(request)
