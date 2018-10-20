@@ -34,7 +34,12 @@ class SummaryController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let home = home {
+            totalSalesDollarLabel.text = "\(home.totalSoldHomesValue(moc: managedObjectContext).currencyFormatter)"
+            numCondoSoldLabel.text     = "\(home.totalSoldCondo(moc: managedObjectContext))"
+            numSFSoldLabel.text        = "\(home.totalSoldSingleFamilyHome(moc: managedObjectContext))"
+        }
     }
 
     // MARK: - Table view data source
